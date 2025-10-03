@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background-color: #222;
+  z-index: 99;
+}
+
+.header .logo {
+  font-size: 4.2rem;
+  font-weight: 700;
+  cursor: default;
+}
+
+.navbar a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 1.5rem;
+  color: #fff;
+  display: inline-block;
+  transition: .4s;
+  padding: 0 .5rem;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: #0caf;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9%;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-left img {
+  width: 45vw;
+  border-radius: .4rem;
+}
+
+.home-right h1 {
+  font-size: 4.5rem;
+  margin-bottom: 5rem;
+  font-weight: 700;
+}
+
+.home-right p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  text-align: center;
+  gap: 2rem;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.about p {
+  font-size: 2rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h1 {
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  font-weight: 700ı;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 4rem;
+}
+
+.contact-card {
+  flex: 1 1 30rem;
+  max-width: 35rem;
+  background-color: #333;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  border: .1rem solid #fcf;
+  box-shadow: 0 .3rem .6rem #fcf;
+  transition: .25s;
+  cursor: pointer;
+}
+
+.contact-card:hover {
+  box-shadow: 0 0 2rem #fcf;
+  transform: scale(1.04);
+}
+
+.contact-card i {
+  font-size: 6rem;
+  color: #fcf;
+}
+
+.contact-card h3 {
+  font-size: 2.5rem;
+  margin: 2rem 1.6rem;
+}
+
+.contact-card p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.contact-card .details {
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: #fcf;
+  color: #444;
+  border-radius: 2rem;
+  letter-spacing: .1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-top: 2rem;
+  border: .2rem solid #ccc;
+  display: inline-block;
+  transition: .25s;
+}
+
+.contact-card .details:hover {
+  box-shadow: 0 .3rem .6rem #fcf;
+}
+
+.commun {
+  background-color: #333;
+}
+
+.commun h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.commun form {
+  max-width: 70rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.commun form .input-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commun form .input-box input,
+.commun form textarea {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  border-radius: .8rem;
+  margin: .7rem 0;
+  background-color: #000;
+  color: #fff;
+  border: .1rem solid #999;
+  letter-spacing: .1rem;
+}
+
+.commun form .input-box input {
+  width: 49%;
+}
+
+.commun form textarea {
+  resize: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.commun form .submit {
+  padding: 1rem 5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #4caf40;
+  color: #fff;
+  border-radius: 2rem;
+  border: .1rem solid #ddd;
+  letter-spacing: .1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #222;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 1rem 0 1.5rem;
+}
+
+.footer-content p {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.footer-content span {
+  font-weight: 700;
+}
+
+.icon {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  padding: 1.7rem 1.7rem;
+  background-color: #07bfff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 .5rem #999;
+  transition: .3s;
+}
+
+.icon i {
+  font-size: 2rem;
+}
+
+.sidebar{
+  all: unset;
+  display: none;
+  font-size: 5rem;
+  cursor: pointer;
+  display: none;
+  transition: .25s;
+}
+
+.sidebar span {
+  display: block;
+  width: 3.5rem;
+  height: .4rem;
+  margin: .8rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  transition: .25s;
+}
+
+.hidden .bar1 {
+  transform: translate(0, 1.2rem) rotate(-45deg);
+}
+
+.hidden .bar2 { opacity: 0; }
+
+.hidden .bar3 {
+  transform: translate(0, -1.2rem) rotate(45deg);
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: inline-block;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: #444;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .2);
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    margin: .1rem 0;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .home-right h1 {
+    font-size: 4rem;
+  }
+
+  .home-right p {
+    margin-top: .5rem;
+    line-height: 1.2;
+  }
+
+  section {
+    padding: 10rem 6% 8rem;
+  }
+  
+  .home h1,
+  .about h1,
+  .contact h1,
+  .commun h1 {
+    margin-bottom: 1rem;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-left img{
+    width: 100%;
+  }
+
+  .about {
+    gap: 1rem;
+  }
+
+  .commun form .input-box input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 43%;
+  }
+
+  section {
+    padding: 6rem 3% 4rem;
+  }
+
+  .home h1,
+  .about h1,
+  .contact h1,
+  .commun h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+}
