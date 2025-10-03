@@ -258,6 +258,7 @@ footer {
 }
 
 .icon {
+  display: none;
   position: fixed;
   right: 3rem;
   bottom: 3rem;
@@ -405,3 +406,4 @@ footer {
     margin-bottom: 2rem;
   }
 }
+
